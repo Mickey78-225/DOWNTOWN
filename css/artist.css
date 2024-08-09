@@ -1,0 +1,61 @@
+nav p a:nth-child(6) {
+    color: deepskyblue;
+}
+.title {
+    background-image: url('../assets/img/title-bg.png');
+    padding: 1rem;
+}
+:is(section, section article:last-child, section article:last-child >div, .social_media) {
+    display: flex;
+}
+:is(section, .social_media) {
+    gap: 2rem;
+}
+section :is(article:last-child, article:last-child >div) {
+    flex-direction: column;
+}
+section {
+    padding: 2rem 0;
+
+    article:first-child {
+        width: 80%;
+        img {
+            width: 100%;
+        }
+    }
+
+    article:last-child {
+        width: 40%;
+        justify-content: space-between;
+
+        hr {
+            width: 2rem;
+        }
+        .annee {
+            font-family: serif;
+            font-style: italic;
+            font-weight: bold;
+
+            span {
+                opacity: .5;
+                font-family: 'Helvetica Neue', sans-serif;
+                font-style: normal;
+            }
+        }
+        >div {
+            gap: 1rem;
+
+            h3 {
+                font-size: 1.5rem;
+            }
+            .social_media figure {
+                    width: 2rem;
+
+                    img {
+                        cursor: pointer;
+                    }
+            }
+            
+        }
+    }
+}

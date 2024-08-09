@@ -1,0 +1,23 @@
+@media screen and (width <= 1024px) {
+    .text_galerie {
+        .text {
+            flex-direction: column;
+            gap: 2rem;
+        }
+    }
+}
+
+@media (width <= 768px) {
+    body {
+        padding: 2rem 1.5rem;
+    }
+}
+
+@media (width <= 425px) {
+    .text_galerie {
+
+        div:first-child {
+            flex-direction: column;
+        }
+    }
+}

@@ -1,0 +1,84 @@
+body {
+    padding: 2rem 6rem;
+}
+nav p a:first-child {
+    color: deepskyblue;
+}
+
+/*  */
+:is(main, .address) {
+    gap: 2rem;
+}
+:is(h2, form p) {
+    font-weight: bold;
+}
+:is(h2, .card:last-of-type span, .text_galerie div:first-child p) {
+    color: gray;
+}
+:is(.address, .address article, form, .card, .text_galerie, .text_galerie div:first-child, .text) {
+    display: flex;
+}
+:is(.address, form, .card, .text_galerie) {
+    flex-direction: column;
+}
+
+h2 {
+    font-size: 4rem;
+}
+h3 {
+    font-size: 1.5rem;
+    padding-top: 1rem;
+}
+
+.address article {
+    border-bottom: 2px solid whitesmoke;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 2rem;
+}
+
+:is(form, form input) {
+    padding: .5rem;
+}
+form {
+    background-color: whitesmoke;
+    width: 400px;
+    
+    input {
+        width: 75%;
+    }
+    button {
+        width: fit-content;
+        padding: .5rem 1.5rem;
+        cursor: pointer;
+    }
+}
+.card {
+    justify-content: center;
+    min-width: 250px;
+}
+:is(.card:first-of-type, .card:nth-of-type(2)) {
+    padding: 2rem 0;
+}
+.card:last-of-type figure {
+    max-width: 500px;
+}
+
+:is(.text_galerie, .text_galerie div:first-child) {
+    gap: 1rem;
+}
+.text_galerie {
+    hr {
+        opacity: .5;
+    }
+    .text {
+        gap: 2.5rem;
+        text-align: justify;
+    }
+}
+
+:is(#name_message, #email_message) {
+    opacity: 0;
+    font-size: .75rem;
+    color: red;
+}
